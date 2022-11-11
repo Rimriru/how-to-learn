@@ -1,20 +1,17 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-.header {
+.partitions_height-limitation {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+}
+
+.header {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -74,28 +71,159 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
-  position: absolute;
 }
 
 .header__main-illustation_position {
+  position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 .header__main-illustation-img {
   width: 100%;
   height: 100%;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
 }
 
+.header__square-pic_position {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: -2;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  width: 80%;
+  min-height: 556px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.two-columns_margin {
+  margin: 100px 0;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__brief-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.two-columns__paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.section-title {
+  width: 60%;
+}
+
+.section-title_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.section-title_margin {
+  margin: 100px auto 20px;
+}
+
+.section-subtitle {
+  width: 60%;
+}
+
+.section-subtitle_text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.section-subtitle_margin {
+  margin: 0 auto;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table_margin {
+  margin: 0 auto 100px;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.table__cell:not(:last-child) {
+  margin-bottom: 20px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.feynman {
+  position: relative;
 }
