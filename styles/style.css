@@ -170,8 +170,7 @@
 }
 
 .section-title_theme_dark {
-  padding-top: 90px;
-  margin: 0 auto 20px;
+  margin: 90px auto 20px;
   position: relative;
   z-index: 3;
 }
