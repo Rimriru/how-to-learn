@@ -77,14 +77,14 @@
   height: 608px;
 }
 
-.header__main-illustation_position {
+.header__main-illustration_position {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 1;
 }
 
-.header__main-illustation-img {
+.header__main-illustration-img {
   width: 100%;
   height: 100%;
 }
@@ -166,8 +166,7 @@
 }
 
 .section-title_margin {
-  padding-top: 100px;
-  margin: 0 auto 20px;
+  margin: 100px auto 20px;
 }
 
 .section-title_theme_dark {
