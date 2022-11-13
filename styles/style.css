@@ -5,17 +5,17 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.partitions_height-limitation {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-}
-
 .header {
   position: relative;
   display: flex;
   justify-content: flex-start;
   background-color: #f2f2f2;
+}
+
+.header_height_limited {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
 }
 
 .logo {
