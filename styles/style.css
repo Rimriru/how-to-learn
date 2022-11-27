@@ -97,13 +97,13 @@
 .description {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
 }
 
 .two-columns__brief {
@@ -227,6 +227,7 @@
   display: flex;
   justify-content: center;
   background-color: #f2f2f2;
+  padding-top: 160px;
 }
 
 .feynman {
