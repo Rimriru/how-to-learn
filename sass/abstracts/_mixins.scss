@@ -1,0 +1,16 @@
+// titles at most sections
+
+@mixin title-style {
+  text-align: center;
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+// titles at feynman section
+
+@mixin feynman-title-style {
+  text-align: center;
+  margin-inline: auto;
+  position: relative;
+  line-height: 1.15;
+}

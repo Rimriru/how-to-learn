@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+.resources {
+  &__logo-zone {
+    width: $fixed-width-of-section;
+    margin: 80px auto 217px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__link {
+    transition: opacity .3s ease;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__logo {
+    width: 270px;
+    height: 38px;
+  }
+}

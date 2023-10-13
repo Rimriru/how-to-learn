@@ -1,0 +1,8 @@
+@use '../abstracts/colors' as *;
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  background-color: $bg-grey;
+  padding-top: 160px;
+}

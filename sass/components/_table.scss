@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+
+.table {
+  width: $fixed-width-of-section;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto 100px;
+  padding-left: 0;
+
+  &_theme_dark {
+    margin: 0 auto 90px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__cell {
+    width: 250px;
+    margin-top: 60px;
+
+    &_theme_dark {
+      width: 200px;
+      margin-top: 80px;
+    }
+  }
+
+  &__heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    &_theme_dark {
+      color:white;
+    }
+  }
+
+  &__text {
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+
+    &_theme_dark {
+      color: white;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
