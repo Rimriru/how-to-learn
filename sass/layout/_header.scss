@@ -1,0 +1,64 @@
+@use '../abstracts/colors' as *;
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  background-color: $bg-grey;
+  overflow: hidden;
+
+  &__title {
+    max-width: 730px;
+    margin: 0;
+    margin-left: 64px;
+    align-self: center;
+    z-index: 4;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    max-width: 388px;
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    z-index: 2;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  &__link {
+    color: $animation-and-links-color;
+    text-decoration: none;
+    transition: opacity .3s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__main-illustration {
+    width: 765px;
+    height: 608px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &__square-pic {
+    height: 568px;
+    width: 568px;
+    background-color: $animation-and-links-color;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 0;
+  }
+}

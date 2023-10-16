@@ -1,8 +1,0 @@
-.resources__link {
-  transition: opacity .3s ease;
-  text-decoration: none;
-}
-
-.resources__link:hover {
-  opacity: .7;
-}
